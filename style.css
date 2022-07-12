@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+body, button, input, select, textarea {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+:root {
+  --background: rgb(24, 24, 24);
+  --colorFonte: rgb(114, 114, 114);
+  --whiteColor: rgb(255, 255, 255);
+}
+
+form {
+  width: 800px;
+  margin: 100px auto;
+  background-color: var(--background);
+  border-radius: 1rem;
+}
+
+form h3 {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--whiteColor);
+  padding-top: 40px;
+}
+
+body form {
+  background-color: var(--background);
+
+}
+
+form .formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 30px 30px;
+}
+
+body form label, span, .main {
+  font-size: 1rem;
+  color: var(--colorFonte);
+  margin: 14px 0;
+  font-weight: 700;
+}
+
+textarea {
+  padding: 10px;
+  width: 100%;
+}
+
+body form input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='date'],
+input[type='file'],
+input[type='submit'] {
+  background-color: var(--background);
+  border: none;
+  border-bottom: var(--whiteColor) 1px solid;
+  padding: 8px 16px;
+  color: var(--colorFonte);
+  font-weight: 400;
+}
+
+body form .formContainer textarea {
+  background-color: var(--background);
+  color: var(--colorFonte);
+  padding: 10px 20px;
+  margin-top: 1rem;
+  border-bottom: none;
+  overflow-y: hidden;
+}
+
+body form .formContainer input[type='submit'] {
+  width: 50%;
+  margin: 20px auto 20px;
+  font-weight: 700;
+  font-size: 1rem;
+}
